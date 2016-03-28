@@ -1,7 +1,8 @@
 For Creating automatic backup in every ten minutes
 
+Note: In Backup.sh file replace mysql_username and mysql_password with your username and password and mail id with your mail id example gmail,hotmail
 sudo apt-get install cron
-#if you want to send attachment with mail body install this :
+#if you want to send attachment with mail body install sharutils :
 sudo apt-get install sharutils
 
 mkdir db_backup
@@ -44,3 +45,12 @@ press ctrl+x
 
 
 # for more time interval syntax refer cron examples
+
+# To check cron status 
+sudo service cron status
+# To restart cron
+sudo service cron restart
+#To stop cron
+sudo service cron stop
+#to start cron
+sudo service cron start
